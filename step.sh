@@ -5,7 +5,8 @@ echo $FRANK_TESTING_PROJECT_ROOT_DIR_PATH
 echo $FRANK_TESTING_PROJECT_PATH
 
 projectdir="$(dirname "${FRANK_TESTING_PROJECT_PATH}")"
-echo projectdir
+echo $projectdir
+cd $FRANK_TESTING_PROJECT_ROOT_DIR_PATH
 cd $projectdir
 
 gem install frank-cucumber -N
