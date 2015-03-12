@@ -24,7 +24,7 @@ brew install ios-sim
 gem uninstall frank-cucumber -ax
 gem uninstall json -ax
 
-gem install json -v '1.8.1'
+gem install json -v '1.8.1' -N
 gem install frank-cucumber -N
 
 frank build

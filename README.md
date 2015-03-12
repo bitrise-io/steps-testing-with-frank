@@ -22,6 +22,10 @@ If you run the tests locally, the 'frankified build' directory that is created a
 
 http://blog.thepete.net/blog/2012/06/24/writing-your-first-frank-test/
 
+#links
+https://groups.google.com/forum/#!topic/frank-discuss/M5qE1IPQxZk
+
+
 ## Test run this Step on your own machine
 
 Steps get their inputs through Environment Variables.
