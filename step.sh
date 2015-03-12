@@ -10,7 +10,6 @@ cd $FRANK_TESTING_PROJECT_ROOT_DIR_PATH
 cd $projectdir
 
 gem install frank-cucumber -N
-frank setup
 frank build
 frank launch
 
