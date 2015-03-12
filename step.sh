@@ -11,6 +11,7 @@ cd $projectdir
 
 gem install frank-cucumber -N
 frank build
+brew install ios-sim
 frank launch
 
 
