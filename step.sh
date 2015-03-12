@@ -12,7 +12,7 @@ cd $projectdir
 gem install frank-cucumber -N
 frank build
 brew install ios-sim
-frank launch
+cucumber Frank/features/my_first.feature
 
 
 # return 0 as the exit code in case of success
