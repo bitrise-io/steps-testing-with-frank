@@ -12,6 +12,7 @@ cd $projectdir
 gem install frank-cucumber -N
 frank build
 brew install ios-sim
+gem update json # 1.8.2 required
 cucumber Frank/features/my_first.feature
 
 
