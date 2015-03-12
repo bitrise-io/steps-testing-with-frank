@@ -4,7 +4,7 @@ THIS_SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 echo "THIS_SCRIPT_DIR: ${THIS_SCRIPT_DIR}"
 
 set -e
-set -v
+
 
 STARTTIME=$(date +%s)
 
@@ -17,17 +17,20 @@ echo $projectdir
 cd $FRANK_TESTING_PROJECT_ROOT_DIR_PATH
 cd $projectdir
 
-sudo python "${THIS_SCRIPT_DIR}/tccutil.py" -i /usr/bin/osascript
+set -v
 
 brew install ios-sim
 
 gem uninstall frank-cucumber -ax
-gem uninstall json -ax # 1.8.1 required
+gem uninstall json -ax
 
 gem install json -v '1.8.1'
 gem install frank-cucumber -N
 
 frank build
+
+sudo python "${THIS_SCRIPT_DIR}/tccutil.py" -i /usr/bin/osascript
+
 cucumber Frank/features/my_first.feature
 
 
