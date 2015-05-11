@@ -2,6 +2,29 @@
 
 Run Frank tests...
 
+# Setup
+
+To run this test, you have to setup Frank for the project first.
+
+To do this, run the following commands in the directory which contains the .xcodeproj file.
+
+```javascript
+gem install frank-cucumber -N
+frank setup
+```
+
+If you have multiple targets, you will be prompted to choose which one the tests should run against.
+It creates a directory called 'Frank', and you should push this to your repository as well.
+
+If you run the tests locally, the 'frankified build' directory that is created after 'frank build' can be ignored and is not needed to be pushed to the remote repository.
+
+# Writing your first frank test
+
+http://blog.thepete.net/blog/2012/06/24/writing-your-first-frank-test/
+
+#links
+https://groups.google.com/forum/#!topic/frank-discuss/M5qE1IPQxZk
+
 
 ## Test run this Step on your own machine
 
